@@ -1,13 +1,12 @@
-# Startup Sales — EDA & Data Cleaning
+# Startup Sales Analysis
 
-Exploratory Data Analysis on a messy, raw startup sales dataset — covering data cleaning, missing value handling, duplicate removal, outlier detection, feature engineering, and univariate/bivariate/multivariate analysis to uncover revenue and order-behavior patterns.
+Exploratory Data Analysis on a messy, raw startup sales dataset - covering data cleaning, missing value handling, duplicate removal, outlier detection, feature engineering, and univariate/bivariate/multivariate analysis to uncover revenue and order-behavior patterns.
 
 ## Tools Used
 
 - **Python**
 - **Pandas** — data cleaning, transformation, aggregation
 - **NumPy** — numeric operations, missing value handling
-- **Matplotlib** — chart rendering
 - **Seaborn** — statistical visualizations (bar, box, histogram, heatmap)
 - **Jupyter Notebook** — analysis environment
 
@@ -58,9 +57,9 @@ flowchart TD
 - **Rating insight:** Average rating is essentially flat across all order statuses (~3.85 to 3.9) and between returning vs. new customers (~3.88 vs ~3.89). Rating does not appear tied to order outcome or customer loyalty.
 - **Correlation check:** `Revenue` correlates strongly with `UnitPrice` (0.88), which is expected since Revenue is calculated from it. `Quantity` has only a weak link to Revenue (0.09). `Rating`, `Age`, and `DiscountPct` show essentially no correlation with anything else.
 - **Cancel/return rate investigation:** Neither payment mode nor city explains the ~43% cancel/return rate — the proportion of Cancelled/Returned orders is nearly identical across every payment mode and every city. This points to a systemic issue or a factor not captured in this dataset, rather than a specific operational segment.
-- **Outliers:** 1,164 orders were flagged as unusually high priced using the IQR method (not removed) — worth a follow-up check on whether these are bulk/B2B orders or data errors.
+- **Outliers:** 1,164 orders were flagged as unusually high priced using the IQR method (not removed), worth a follow-up check on whether these are bulk/B2B orders or data errors.
 
-**Recommendation:** Prioritize marketing and inventory focus on Electronics, Home & Kitchen, and Bangalore/Kolkata, since they drive the largest share of revenue. The bigger open issue is the ~43% cancel/return rate — since it isn't explained by price, rating, payment mode, or city, the next investigation should look at data this dataset doesn't include (delivery timestamps, stock availability, customer service logs) to find the actual driver.
+**Recommendation:** Prioritize marketing and inventory focus on Electronics, Home & Kitchen, and Bangalore/Kolkata, since they drive the largest share of revenue. The bigger open issue is the ~43% cancel/return rate since it isn't explained by price, rating, payment mode, or city, the next investigation should look at data this dataset doesn't include (delivery timestamps, stock availability, customer service logs) to find the actual driver.
 
 ## Limitations
 
