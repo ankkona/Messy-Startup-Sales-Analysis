@@ -1,6 +1,6 @@
 # Startup Sales Analysis
 
-Exploratory Data Analysis on a messy, raw startup sales dataset - covering data cleaning, missing value handling, duplicate removal, outlier detection, feature engineering, and univariate/bivariate/multivariate analysis to uncover revenue and order-behavior patterns.
+Exploratory Data Analysis on a synthetic messy, raw startup sales dataset - covering data cleaning, missing value handling, duplicate removal, outlier detection, feature engineering, and univariate/bivariate/multivariate analysis to uncover revenue and order-behavior patterns. This synthetic dataset was created by **Claude.**
 
 ## Tools Used
 
