@@ -42,9 +42,8 @@ flowchart TD
     H1 --> I[Correlation Check]
     H2 --> I
     H3 --> I
-    I --> J[Deeper Investigation<br/>Cancel/Return rate vs Payment Mode & City]
-    J --> K[Key Findings & Recommendations]
-    K --> L[Save Cleaned Dataset<br/>StartupSalesCleaned.csv]
+    I --> J[Key Findings & Recommendations]
+    J --> K[Save Cleaned Dataset<br/>StartupSalesCleaned.csv]
 ```
 
 ## Insights
